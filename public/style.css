@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* Flex layout for full height */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #5cb85c;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+/* Container Styling */
+.container {
+    flex-grow: 1; /* Allow the container to take up remaining space */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin: 20px auto; /* Add margin */
+    max-width: 600px; /* Limit width */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack navigation links */
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 5px 0; /* Space out links */
+    }
+
+    .container {
+        margin: 20px; /* Adjust container margin */
+        padding: 15px; /* Adjust container padding */
+    }
+
+    h1 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    button {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
